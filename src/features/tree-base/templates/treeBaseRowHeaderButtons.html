@@ -1,0 +1,10 @@
+<div
+  class="ui-grid-tree-base-row-header-buttons"
+  ng-class="{'ui-grid-tree-base-header': row.treeLevel > -1 }"
+  ng-click="treeButtonClick(row, $event)">
+  <i
+    ng-class="treeButtonClass(row)"
+    ng-style="{'padding-left': grid.options.treeIndent * row.treeLevel + 'px'}">
+  </i>
+  &nbsp;
+</div>
